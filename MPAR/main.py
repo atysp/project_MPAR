@@ -5,7 +5,7 @@ from classes import *
 from iteration_valeurs import * 
 from smc import *
 from q_learning import *
-from visualisation import visu_random_walk
+from visualisation import *
 from accessibilite import *
 
 #test
@@ -77,9 +77,9 @@ def main():
 
     #code à exectuer:
     # walk(transitions, states[0])
-    #visu_random_walk(states,actions, transitions) 
-    accessibilite('D1',transitions, states)
-    #q_learning(states,actions,transitions,100,1/2)
+    # visu_random_walk(states,actions, transitions) 
+    # accessibilite('D1',transitions, states)
+    # q_learning(states,actions,transitions,100,1/2)
     # accessibilite_mdp('S11',transitions,states,['a']*16)
 
 if __name__ == '__main__':

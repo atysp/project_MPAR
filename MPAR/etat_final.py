@@ -1,4 +1,3 @@
-from importations import *
 from random_walk import random_walk_without_comment
 
 def etat_final(n,states,actions,transitions) :

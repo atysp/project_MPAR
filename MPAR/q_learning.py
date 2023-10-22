@@ -65,7 +65,7 @@ def q_learning(states, actions, transitions, Ttot=10000, gamma=1/2,):
         for t in range(Ttot):
             # Choix de l'état et de l'action
             st,L = choose_state(etat,L)
-            print(st,L)
+            # print(st,L)
             at = choose_action(Q, st)
             alpha[st,at]+=1
 
@@ -81,10 +81,10 @@ def q_learning(states, actions, transitions, Ttot=10000, gamma=1/2,):
             etat = st1 # on a traité cet état qui sera réutiliser dans choose_state
 
             #affichage
-            print(alpha)
-            print("-"*12)
-            print(Q)
-            print()
+            # print(alpha)
+            # print("-"*12)
+            # print(Q)
+            # print()
         return Q
 
     Q0 = np.zeros((len(states), len(actions)))
